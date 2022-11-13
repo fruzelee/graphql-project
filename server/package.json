@@ -1,0 +1,19 @@
+{
+  "name": "graphql-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fruzelee/graphql-project.git"
+  },
+  "author": "Fazle Rabbi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fruzelee/graphql-project/issues"
+  },
+  "homepage": "https://github.com/fruzelee/graphql-project#readme"
+}
