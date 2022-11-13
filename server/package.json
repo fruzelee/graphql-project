@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fruzelee/graphql-project/issues"
   },
-  "homepage": "https://github.com/fruzelee/graphql-project#readme"
+  "homepage": "https://github.com/fruzelee/graphql-project#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
