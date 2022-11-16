@@ -2,7 +2,6 @@ const graphql = require("graphql");
 var _ = require("lodash");
 
 //dummy data
-
 var usersData = [
   { id: "1", name: "Fazle", age: 30, profession: "Android Engineer" },
   { id: "2", name: "Rabbi", age: 31, profession: "Android Developer" },
