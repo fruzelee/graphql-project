@@ -16,26 +16,31 @@ var hobbiesData = [
     id: "1",
     title: "Android Engineer",
     description: "Using computers to make the workd a better place",
+    userId: "1",
   },
   {
     id: "2",
     title: "Android Developer",
     description: "Sweat and feel better before eating donouts",
+    userId: "1",
   },
   {
     id: "3",
     title: "Python Developer",
     description: "Get in the water and learn to become the water",
+    userId: "2",
   },
   {
     id: "4",
     title: "React Developer",
     description: "A hobby for fency people",
+    userId: "3",
   },
   {
     id: "5",
     title: "Magento Developer",
     description: "Wear hiking boots and explore the world",
+    userId: "1",
   },
 ];
 
@@ -74,6 +79,12 @@ const HobbyType = new GraphQLObjectType({
     id: { type: GraphQLID },
     title: { type: GraphQLString },
     description: { type: GraphQLString },
+    user: {
+      type: UserType,
+      resolve(parent, args) {
+        return _.find(usersData, { id: parent.userId });
+      },
+    },
   }),
 });
 
