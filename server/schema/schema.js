@@ -162,6 +162,8 @@ const RootQuery = new GraphQLObjectType({
 const Mutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
+
+    //create user mutation
     createUser: {
       type: UserType,
       args: {
@@ -178,6 +180,24 @@ const Mutation = new GraphQLObjectType({
           profession: args.profession,
         };
         return user;
+      },
+    },
+
+    //create post mutatoin
+    createPost: {
+      type: PostType,
+      args: {
+        // id: {type: GraphQLID}
+        comment: { type: GraphQLString },
+        userId: { type: GraphQLID },
+      },
+
+      resolve(parent, args) {
+        let post = {
+          comment: args.comment,
+          userId: args.userId,
+        };
+        return post;
       },
     },
   },
