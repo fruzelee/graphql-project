@@ -162,7 +162,6 @@ const RootQuery = new GraphQLObjectType({
 const Mutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
-
     //create user mutation
     createUser: {
       type: UserType,
@@ -198,6 +197,26 @@ const Mutation = new GraphQLObjectType({
           userId: args.userId,
         };
         return post;
+      },
+    },
+
+    //crate hobby mutation
+    createHobby: {
+      type: HobbyType,
+      args: {
+        // id: {type: GraphQLID}
+        title: { type: GraphQLString },
+        description: { type: GraphQLString },
+        userId: { type: GraphQLID },
+      },
+
+      resolve(parent, args) {
+        let hobby = {
+          title: args.title,
+          description: args.description,
+          userId: args.userId,
+        };
+        return hobby;
       },
     },
   },
