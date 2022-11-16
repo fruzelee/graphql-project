@@ -1,6 +1,23 @@
 const graphql = require("graphql");
+var _ = require("lodash");
 
-const { GraphQLObjectType, GraphQLID, GraphQLString, GraphQLInt, GraphQLSchema } = graphql;
+//dummy data
+
+var usersData = [
+  { id: "1", name: "Fazle", age: 30 },
+  { id: "13", name: "Rabbi", age: 30 },
+  { id: "211", name: "Antu", age: 30 },
+  { id: "234", name: "Tamim", age: 30 },
+  { id: "2323", name: "Mishu", age: 30 },
+];
+
+const {
+  GraphQLObjectType,
+  GraphQLID,
+  GraphQLString,
+  GraphQLInt,
+  GraphQLSchema,
+} = graphql;
 
 //Create types
 const UserType = new GraphQLObjectType({
@@ -15,32 +32,30 @@ const UserType = new GraphQLObjectType({
 
 //RootQuery
 const RootQuery = new GraphQLObjectType({
-    name: 'RootQueryType',
-    description: 'Description',
-    fields: {
-        user: {
-            type: UserType,
-            args: {id: {type: GraphQLString}},
+  name: "RootQueryType",
+  description: "Description",
+  fields: {
+    user: {
+      type: UserType,
+      args: { id: { type: GraphQLString } },
 
-            resolve(parent, args){
-                let user = {
-                    id: '345',
-                    age:30,
-                    name: 'Fazle'
-                }
+      resolve(parent, args) {
+        return _.find(usersData, { id: args.id });
 
-                return user;
-                
-                //we resolve with data
-                //get and return data from a datasource
-            }
-
-           
-        }
-    }
-
+        //we resolve with data
+        //get and return data from a datasource
+      },
+    },
+  },
 });
 
+/*
+    {
+        user(id: "1") }
+            name
+    }
+*/
+
 module.exports = new GraphQLSchema({
-    query: RootQuery
-})
+  query: RootQuery,
+});
