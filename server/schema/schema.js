@@ -180,6 +180,7 @@ const RootQuery = new GraphQLObjectType({
 });
 
 //Mutations
+
 const Mutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
