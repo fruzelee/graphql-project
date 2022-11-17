@@ -153,6 +153,13 @@ const RootQuery = new GraphQLObjectType({
       },
     },
 
+    hobbies: {
+      type: new GraphQLList(HobbyType),
+      resolve(parent, args) {
+        return hobbiesData;
+      },
+    },
+
     post: {
       type: PostType,
       args: { id: { type: GraphQLID } },
@@ -160,6 +167,13 @@ const RootQuery = new GraphQLObjectType({
       resolve(parent, args) {
         //return data (post data)
         return _.find(postsData, { id: args.id });
+      },
+    },
+
+    posts: {
+      type: new GraphQLList(PostType),
+      resolve(parent, args) {
+        return postsData;
       },
     },
   },
