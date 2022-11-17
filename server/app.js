@@ -1,6 +1,10 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql').graphqlHTTP;
 
+/*
+mongodb+srv://fr:<password>@cluster0.qfcnchr.mongodb.net/test
+*/
+
 const schema = require('./schema/schema')
 const testSchema = require('./schema/types_schema')
 
