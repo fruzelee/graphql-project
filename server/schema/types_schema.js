@@ -53,8 +53,8 @@ const RootQuery = new GraphQLObjectType({
 
         let personObj = {
           //   id: { type: GraphQLID },
-          name: null,
-          age: null,
+          name: 'Fazle',
+          age: 30,
           isMarried: true,
           gpa: 4.0,
         };
