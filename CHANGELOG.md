@@ -38,4 +38,6 @@ All notable changes to this project will be documented in this file.
 - docs: add CHANGELOG.md
 - chore: update changelog with existing commits
 - chore: exclude local.js file in .gitignore
+- feat: add password security for MongoDB URL in app.js using local.js file
+
 
