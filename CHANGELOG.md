@@ -40,4 +40,4 @@ All notable changes to this project will be documented in this file.
 - chore: exclude local.js file in .gitignore
 - feat: add password security for MongoDB URL in app.js using local.js file
 - docs: add instructions on how to run the server in README.md
-
+- fix: resolve MongoDB Atlas connection error caused by un-whitelisted IP
