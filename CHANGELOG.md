@@ -70,3 +70,14 @@ The addition of this Hobby Model is a significant enhancement to the application
 structured and organized way to store and retrieve hobby data. By defining the Hobby Model using Mongoose, we can take
 advantage of its built-in validation and query capabilities, ensuring data consistency and reliability throughout the
 application. This will also make it easier to maintain and update the application over time.
+
+- feat: add Post Model for MongoDB using Mongoose
+
+This commit adds a new Post Model for MongoDB, created using Mongoose. The Post Model is defined using the Mongoose
+Schema class and includes fields for the post's comment, and any additional data required by the
+application.
+
+The addition of this Post Model is a significant improvement to the application's data architecture, providing a
+structured and organized way to store and retrieve post data. By defining the Post Model using Mongoose, we can take
+advantage of its built-in validation and query capabilities, ensuring data consistency and reliability throughout the
+application. This will also make it easier to maintain and update the application over time.

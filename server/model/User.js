@@ -6,4 +6,5 @@ const userSchema = new MSchema({
     age: Number,
     profession: String
 })
+
 module.exports = mongoose.model('User', userSchema);
