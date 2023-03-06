@@ -5,15 +5,13 @@ const mongoose = require("mongoose");
 
 const schema = require("./schema/schema");
 const testSchema = require("./schema/types_schema");
+const url = require("url");
 
 const app = express();
 
-/*
-mongodb+srv://fr:<password>@cluster0.qfcnchr.mongodb.net/test
-*/
-
 mongoose.connect(
-    "mongodb://fr:" + pwd.pwd + ">@cluster0.qfcnchr.mongodb.net/test"
+    pwd.DB_URL,
+    {useNewUrlParser: true}
 );
 mongoose.connection.once("open", () => {
     console.log("Yes! We are connected!");
