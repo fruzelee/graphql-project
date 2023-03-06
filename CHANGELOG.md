@@ -81,3 +81,7 @@ The addition of this Post Model is a significant improvement to the application'
 structured and organized way to store and retrieve post data. By defining the Post Model using Mongoose, we can take
 advantage of its built-in validation and query capabilities, ensuring data consistency and reliability throughout the
 application. This will also make it easier to maintain and update the application over time.
+
+- chore: Use graphql schema instead of test_schema in app.js
+
+This commit updates the app.js file to use the graphql schema instead of the test_schema. 
