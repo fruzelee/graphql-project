@@ -49,3 +49,13 @@ URL parser instead of the legacy parser, which is now deprecated.
 
 The addition of this option improves the stability and reliability of the application, ensuring that it can continue to
 connect to the database without encountering any issues related to the deprecated parser.
+
+- feat: add User Model for MongoDB using Mongoose
+
+This commit adds a new Mongoose User Model to the application, which provides a structured representation of the user
+data in the database. The User Model is defined using the Mongoose Schema class and includes fields for the user's name,
+age, profession, and any additional data required by the application.
+
+The creation of this User Model is a significant enhancement to the application, as it provides a consistent and
+reliable way to access and manipulate user data. By defining the User Model using Mongoose, we can take advantage of its
+built-in validation and query capabilities, making it easier to maintain and update the application over time.
