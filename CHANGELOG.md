@@ -86,12 +86,12 @@ application. This will also make it easier to maintain and update the applicatio
 
 This commit updates the app.js file to use the graphql schema instead of the test_schema.
 
-- feat(user): add mutation in graphql and update user type
+- feat(user): add mutation in graphql to update user type
 
 This commit adds a new feature to the user module in GraphQL. Specifically, it adds a mutation and updates the user
 type.
 
-- feat(post): add mutation in graphql and update post type
+- feat(post): add mutation in graphql to update post type
 
 This commit adds a new feature to the post module in GraphQL. Specifically, it adds a mutation and updates the post
 type.
@@ -99,3 +99,8 @@ type.
 - feat(hobby): update create hobby mutation
 
 This commit updates an existing feature in the hobby module. Specifically, it updates create hobby mutation.
+
+- feat(hobby): add mutation to update hobby type
+
+This commit adds a new feature to the hobby module in GraphQL. Specifically, it adds a mutation to update the hobby
+type.
