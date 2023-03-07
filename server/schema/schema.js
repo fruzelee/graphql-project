@@ -258,10 +258,21 @@ const Mutation = new GraphQLObjectType({
         UpdatePost: {
             type: PostType,
             args: {
-                // id: {type: GraphQLID}
+                id: {type: new GraphQLNonNull(GraphQLString)},
                 comment: {type: new GraphQLNonNull(GraphQLString)},
-                userId: {type: new GraphQLNonNull(GraphQLString)},
+                // userId: {type: new GraphQLNonNull(GraphQLString)},
             },
+            resolve(parent, args) {
+                return updatedPost = Post.findByIdAndUpdate(
+                    args.id,
+                    {
+                        $set: {
+                            comment: args.comment,
+                        }
+                    },
+                    {new: true}
+                )
+            }
         },
 
         //crate hobby mutation
