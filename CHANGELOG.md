@@ -84,4 +84,9 @@ application. This will also make it easier to maintain and update the applicatio
 
 - chore: Use graphql schema instead of test_schema in app.js
 
-This commit updates the app.js file to use the graphql schema instead of the test_schema. 
+This commit updates the app.js file to use the graphql schema instead of the test_schema.
+
+- feat(user): add mutation in graphql and update user type
+
+This commit adds a new feature to the user module in GraphQL. Specifically, it adds a mutation and updates the user
+type.
