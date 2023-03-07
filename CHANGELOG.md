@@ -108,3 +108,5 @@ type.
 - refactor: rename mutation names
 
 This commit refactors the codebase by renaming mutation names.
+
+- feat: implement functionality to create and update MongoDB mutation data
