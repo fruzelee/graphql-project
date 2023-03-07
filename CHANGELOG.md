@@ -95,3 +95,7 @@ type.
 
 This commit adds a new feature to the post module in GraphQL. Specifically, it adds a mutation and updates the post
 type.
+
+- feat(hobby): update create hobby mutation
+
+This commit updates an existing feature in the hobby module. Specifically, it updates create hobby mutation.

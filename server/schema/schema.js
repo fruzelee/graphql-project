@@ -4,6 +4,7 @@ const {GraphQLNonNull} = require("graphql");
 
 const {User} = require('../model/User');
 const {Post} = require('../model/Post');
+const {Hobby} = require('../model/Hobby');
 
 //dummy data
 
@@ -275,7 +276,7 @@ const Mutation = new GraphQLObjectType({
             }
         },
 
-        //crate hobby mutation
+        //create hobby mutation
         createHobby: {
             type: HobbyType,
             args: {
@@ -286,12 +287,12 @@ const Mutation = new GraphQLObjectType({
             },
 
             resolve(parent, args) {
-                let hobby = {
+                let hobby = new Hobby({
                     title: args.title,
                     description: args.description,
                     userId: args.userId,
-                };
-                return hobby;
+                });
+                return hobby.save();
             },
         },
     },
