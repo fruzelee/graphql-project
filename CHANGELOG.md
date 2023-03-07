@@ -104,3 +104,7 @@ This commit updates an existing feature in the hobby module. Specifically, it up
 
 This commit adds a new feature to the hobby module in GraphQL. Specifically, it adds a mutation to update the hobby
 type.
+
+- refactor: rename mutation names
+
+This commit refactors the codebase by renaming mutation names.

@@ -193,7 +193,7 @@ const Mutation = new GraphQLObjectType({
     name: "Mutation",
     fields: {
         //create user mutation
-        createUser: {
+        CreateUser: {
             type: UserType,
             args: {
                 // id: {type: GraphQLID}
@@ -239,7 +239,7 @@ const Mutation = new GraphQLObjectType({
         },
 
         //create post mutation
-        createPost: {
+        CreatePost: {
             type: PostType,
             args: {
                 // id: {type: GraphQLID}
@@ -277,7 +277,7 @@ const Mutation = new GraphQLObjectType({
         },
 
         //create hobby mutation
-        createHobby: {
+        CreateHobby: {
             type: HobbyType,
             args: {
                 // id: {type: GraphQLID}
