@@ -90,3 +90,8 @@ This commit updates the app.js file to use the graphql schema instead of the tes
 
 This commit adds a new feature to the user module in GraphQL. Specifically, it adds a mutation and updates the user
 type.
+
+- feat(post): add mutation in graphql and update post type
+
+This commit adds a new feature to the post module in GraphQL. Specifically, it adds a mutation and updates the post
+type.

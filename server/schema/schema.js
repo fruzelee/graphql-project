@@ -254,6 +254,16 @@ const Mutation = new GraphQLObjectType({
             },
         },
 
+        //update post
+        UpdatePost: {
+            type: PostType,
+            args: {
+                // id: {type: GraphQLID}
+                comment: {type: new GraphQLNonNull(GraphQLString)},
+                userId: {type: new GraphQLNonNull(GraphQLString)},
+            },
+        },
+
         //crate hobby mutation
         createHobby: {
             type: HobbyType,
@@ -287,4 +297,3 @@ module.exports = new GraphQLSchema({
     query: RootQuery,
     mutation: Mutation,
 });
-
