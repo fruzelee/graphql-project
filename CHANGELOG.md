@@ -19,17 +19,17 @@ All notable changes to this project will be documented in this file.
 - feat: add relationship between User Type and Hobby Type
 - feat: add Posts Query
 - feat: add Hobbies Query
-- feat!: BREAKING CHANGE: GraphQL basic boilerplate, server-side, and development environment setup done
+- BREAKING_CHANGE: GraphQL basic boilerplate, server-side, and development environment setup done
 - feat: add create user mutation
 - feat: add create post mutation
 - feat: add create hobby mutation
 - feat: add root query to get all user data
 - feat: add posts and hobbies queries
-- feat!: BREAKING CHANGE: cover mutations
+- BREAKING_CHANGE: cover mutations
 - feat: add types_schema
 - feat: add Person Type with different GraphQL scalar types
 - feat: add non-nullable types
-- feat!: BREAKING CHANGE: cover GraphQL types
+- BREAKING_CHANGE: cover GraphQL types
 - feat: cover scalar types and object types
 - feat: install Mongoose
   command: npm install mongoose --save
@@ -125,3 +125,7 @@ system.
 
 This commit adds a new Remove Hobby mutation to the hobby feature. The mutation allows hobbies to be removed from the
 system.
+
+- BREAKING_CHANGE(database): implement CRUD operations with Mongoose
+
+This commit implements all the CRUD operations using the Mongoose library and adds them to the database feature.
