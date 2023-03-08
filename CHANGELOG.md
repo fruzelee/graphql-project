@@ -115,3 +115,8 @@ This commit refactors the codebase by renaming mutation names.
 
 This commit adds a new Remove User mutation to the user feature. The mutation allows users to be removed from the
 system.
+
+- feat(post): add Remove Post mutation
+
+This commit adds a new Remove Post mutation to the post feature. The mutation allows posts to be removed from the
+system.

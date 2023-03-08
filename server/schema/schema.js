@@ -1,6 +1,6 @@
 const graphql = require("graphql");
 var _ = require("lodash");
-const {GraphQLNonNull} = require("graphql");
+const {GraphQLNonNull, execute} = require("graphql");
 
 const User = require('../model/User')
 const Hobby = require('../model/Hobby')
@@ -258,8 +258,8 @@ const Mutation = new GraphQLObjectType({
                     args.id
                 ).exec();
 
-                if(!removedUser){
-                    throw new("Error");
+                if (!removedUser) {
+                    throw new Error("Error");
                 }
 
                 return removedUser;
@@ -301,6 +301,29 @@ const Mutation = new GraphQLObjectType({
                     },
                     {new: true}
                 )
+            }
+        },
+
+        //Remove a Post
+        RemovePost: {
+            type: PostType,
+            args: {
+                id: {type: new GraphQLNonNull(GraphQLString)}
+            },
+
+            resolve(parent, args) {
+
+                let removedPost = Post.findByIdAndRemove(
+                    args.id
+                ).exec();
+
+                if (!removedPost) {
+                    throw new Error("Error");
+                }
+
+                return removedPost;
+
+
             }
         },
 
