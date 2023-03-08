@@ -110,3 +110,8 @@ type.
 This commit refactors the codebase by renaming mutation names.
 
 - feat: implement functionality to create and update MongoDB mutation data
+
+- feat(user): add Remove User mutation
+
+This commit adds a new Remove User mutation to the user feature. The mutation allows users to be removed from the
+system.
