@@ -368,7 +368,30 @@ const Mutation = new GraphQLObjectType({
                     {new: true}
                 )
             }
-        }
+        },
+
+        //Remove a Hobby
+        RemoveHobby: {
+            type: HobbyType,
+            args: {
+                id: {type: new GraphQLNonNull(GraphQLString)}
+            },
+
+            resolve(parent, args) {
+
+                let removedHobby = Hobby.findByIdAndRemove(
+                    args.id
+                ).exec();
+
+                if (!removedHobby) {
+                    throw new Error("Error");
+                }
+
+                return removedHobby;
+
+
+            }
+        },
     },
 });
 

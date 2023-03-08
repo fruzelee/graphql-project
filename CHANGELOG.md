@@ -120,3 +120,8 @@ system.
 
 This commit adds a new Remove Post mutation to the post feature. The mutation allows posts to be removed from the
 system.
+
+- feat(hobby): add Remove Hobby mutation
+
+This commit adds a new Remove Hobby mutation to the hobby feature. The mutation allows hobbies to be removed from the
+system.
