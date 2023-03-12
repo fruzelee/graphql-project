@@ -145,3 +145,8 @@ issues.
 
 This commit updates the app.js file to make the port dynamic. This ensures that the application can run on any available
 port, rather than being restricted to a specific one.
+
+- feat: Add dev path to scripts
+
+This commit adds a dev path to the scripts, which allows for the development environment to be started easily. This will
+enable developers to work on the application with minimal setup and configuration required.
