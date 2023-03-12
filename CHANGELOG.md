@@ -140,3 +140,8 @@ to their servers. This will ensure that the deployment process runs smoothly and
 This commit adds a Procfile to the project, which specifies that the application is a Node.js web application and
 provides instructions to Heroku on how to run it. This will enable the application to be deployed on Heroku without any
 issues.
+
+- feat: Make port dynamic in app.js
+
+This commit updates the app.js file to make the port dynamic. This ensures that the application can run on any available
+port, rather than being restricted to a specific one.
