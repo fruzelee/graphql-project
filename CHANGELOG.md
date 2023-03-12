@@ -129,3 +129,8 @@ system.
 - BREAKING_CHANGE(database): implement CRUD operations with Mongoose
 
 This commit implements all the CRUD operations using the Mongoose library and adds them to the database feature.
+
+- feat: Add start path to scripts for remote web server
+
+This commit adds the start path to the scripts so that the remote web server knows what to do when we push these files
+to their servers. This will ensure that the deployment process runs smoothly and without any errors.
