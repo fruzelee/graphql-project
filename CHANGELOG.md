@@ -150,3 +150,5 @@ port, rather than being restricted to a specific one.
 
 This commit adds a dev path to the scripts, which allows for the development environment to be started easily. This will
 enable developers to work on the application with minimal setup and configuration required.
+
+- feat: Add build path to scripts
