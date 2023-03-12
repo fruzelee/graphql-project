@@ -9,7 +9,7 @@ const url = require("url");
 
 const port = process.env.PORT || 4000;
 
-const app = express();
+const index = express();
 
 mongoose.connect(
     pwd.DB_URL,
@@ -19,13 +19,13 @@ mongoose.connection.once("open", () => {
     console.log("Yes! We are connected!");
 });
 
-app.use("/graphql", graphqlHTTP({
+index.use("/graphql", graphqlHTTP({
         graphiql: true,
         schema: schema,
     })
 );
 
-app.listen(port, () => { //localhost:4000
+index.listen(port, () => { //localhost:4000
     //localhost:4000
     console.log("Listening for requests on my awesome port 4000");
 });

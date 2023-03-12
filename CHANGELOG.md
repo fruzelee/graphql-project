@@ -38,7 +38,7 @@ All notable changes to this project will be documented in this file.
 - docs: add CHANGELOG.md
 - chore: update changelog with existing commits
 - chore: exclude local.js file in .gitignore
-- feat: add password security for MongoDB URL in app.js using local.js file
+- feat: add password security for MongoDB URL in index.js using local.js file
 - docs: add instructions on how to run the server in README.md
 - fix: resolve MongoDB Atlas connection error caused by un-whitelisted IP
 - feat: Add useNewUrlParser option to resolve deprecation warning while connecting to Mongoose
@@ -82,9 +82,9 @@ structured and organized way to store and retrieve post data. By defining the Po
 advantage of its built-in validation and query capabilities, ensuring data consistency and reliability throughout the
 application. This will also make it easier to maintain and update the application over time.
 
-- chore: Use graphql schema instead of test_schema in app.js
+- chore: Use graphql schema instead of test_schema in index.js
 
-This commit updates the app.js file to use the graphql schema instead of the test_schema.
+This commit updates the index.js file to use the graphql schema instead of the test_schema.
 
 - feat(user): add mutation in graphql to update user type
 
@@ -141,9 +141,9 @@ This commit adds a Procfile to the project, which specifies that the application
 provides instructions to Heroku on how to run it. This will enable the application to be deployed on Heroku without any
 issues.
 
-- feat: Make port dynamic in app.js
+- feat: Make port dynamic in index.js
 
-This commit updates the app.js file to make the port dynamic. This ensures that the application can run on any available
+This commit updates the index.js file to make the port dynamic. This ensures that the application can run on any available
 port, rather than being restricted to a specific one.
 
 - feat: Add dev path to scripts
@@ -153,4 +153,4 @@ enable developers to work on the application with minimal setup and configuratio
 
 - feat: Add build path to scripts
 
-- refactor: rename index.js to app.js
+- refactor: rename index.js to index.js
