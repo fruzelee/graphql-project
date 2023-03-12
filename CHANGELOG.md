@@ -134,3 +134,9 @@ This commit implements all the CRUD operations using the Mongoose library and ad
 
 This commit adds the start path to the scripts so that the remote web server knows what to do when we push these files
 to their servers. This will ensure that the deployment process runs smoothly and without any errors.
+
+- feat: Add Procfile for Heroku deployment as a Node.js web application
+
+This commit adds a Procfile to the project, which specifies that the application is a Node.js web application and
+provides instructions to Heroku on how to run it. This will enable the application to be deployed on Heroku without any
+issues.
