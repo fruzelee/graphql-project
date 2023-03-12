@@ -152,3 +152,5 @@ This commit adds a dev path to the scripts, which allows for the development env
 enable developers to work on the application with minimal setup and configuration required.
 
 - feat: Add build path to scripts
+
+- refactor: rename index.js to app.js
